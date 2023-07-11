@@ -540,7 +540,6 @@ GameObject:
   - component: {fileID: 1617824712}
   - component: {fileID: 1617824714}
   - component: {fileID: 1617824713}
-  - component: {fileID: 1617824715}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -724,7 +723,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1617824714}
   animator: {fileID: 1617824712}
+  attackPoint: {fileID: 157013180}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 128
   runSpeed: 70
+  attackRange: 0.5
+  attackDamage: 40
 --- !u!114 &1617824714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,7 +742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77174dc5692ea4146a0564c3643e2a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 600
+  m_JumpForce: 700
   m_MovementSmoothing: 0.05
   m_AirControl: 1
   m_WhatIsGround:
@@ -759,25 +764,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1617824715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617824707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8700de5aa5fee894b85a1b0aa5235090, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1617824712}
-  attackPoint: {fileID: 157013180}
-  attackRange: 0.53
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 128
-  attackDamage: 40
 --- !u!1 &1839590677
 GameObject:
   m_ObjectHideFlags: 0
